@@ -40,4 +40,4 @@
 8. **界面展示**
    ![image.png](https://tgpicture.6666689.xyz/file/1732016997908_image.png)
    ![image.png](https://tgpicture.6666689.xyz/file/1732017092874_image.png)
-   ![image](https://github.com/user-attachments/assets/3cabd859-6d43-4ed9-ba12-41b0c13d15b4)
+   ![image.png](https://tgpicture.6666689.xyz/file/1732018232288_image.png)
