@@ -7,7 +7,7 @@
    - 点击编辑代码，在编辑器中，删除默认生成的代码。
 
 2. **复制index.js文件代码**
-   - 将上面的`index.js`文件内容复制粘贴到Worker编辑器中。
+   - 将上面的[index.js](https://github.com/fengshengbanxia/API-KEY/blob/main/index.js)文件内容复制粘贴到Worker编辑器中。
 
 3. **创建一个KV空间**
    - 返回Cloudflare控制台主页。
