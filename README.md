@@ -2,34 +2,34 @@
 
 1. **打开Cloudflare，创建一个Worker**
    - 登录到您的Cloudflare账户。
-   - 点击“Workers”选项卡，然后点击“Create a service”按钮。
+   - 点击“Workers 和 Pages”选项卡，然后点击创建按钮，创建一个worker
    - 输入任意名称作为Worker的名称，例如`my-worker`，然后点击“Continue”。
-   - 在编辑器中，删除默认生成的代码。
+   - 点击编辑代码，在编辑器中，删除默认生成的代码。
 
 2. **复制index.js文件代码**
-   - 将您的`index.js`文件内容复制粘贴到Worker编辑器中。
+   - 将上面的`index.js`文件内容复制粘贴到Worker编辑器中。
 
 3. **创建一个KV空间**
    - 返回Cloudflare控制台主页。
-   - 点击“Workers”选项卡，然后点击“KV”子菜单下的“Create namespace”按钮。
+   - 点击“Workers 和 Pages”选项卡，然后点击子菜单下的“KV”按钮创建一个KV空间。
    - 输入命名空间名称，例如`apikey_kv`，然后点击“Create”。
 
 4. **设置Worker变量**
    - 回到您的Worker服务页面。
-   - 点击“Settings”选项卡，然后选择“Variables” -> “Environment variables”。
+   - 点击设置选项卡，然后选择“变量和机密” -> 添加。
    - 添加以下环境变量：
      | 名称             | 值                      |
      |------------------|-------------------------|
-     | ADMIN_PASSWORD   | 您的登录密码            |
-     | ADMIN_USERNAME   | 您的登录用户名          |
-     | JWT_SECRET       | 随便起                  |
+     | ADMIN_PASSWORD（必须）   | 您的登录密码            |
+     | ADMIN_USERNAME（必须）   | 您的登录用户名          |
+     | JWT_SECRET（必须）       | 随便起任意                  |
 
 5. **绑定KV空间**
-   - 继续在Worker服务页面的“Settings”选项卡下。
-   - 选择“Variables” -> “KV Namespaces”。
-   - 点击“Add binding”，输入绑定名称为`API_KEYS`，并将之前创建的KV空间`apikey_kv`关联起来。
+   - 继续在Worker服务页面的设置选项卡下。
+   - 选择绑定 -> 添加->`KV 命名空间`。
+   - 输入变量名称为`API_KEYS`，并选择将之前创建的KV空间`apikey_kv`关联起来。
 
 6. **访问Worker自动生成的域进行登录**
-   - 返回到Worker服务页面顶部，找到并点击“Quick edit”旁边的URL链接。
+   - 返回到Worker服务页面顶部，在设置中域和路由，用workers.dev值也就是中国wokers的域进行访问。
    - 使用您设置的`ADMIN_USERNAME`和`ADMIN_PASSWORD`进行登录。
    - 登录成功后，您可以添加您的API-KEY了。
