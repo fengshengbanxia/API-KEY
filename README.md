@@ -33,3 +33,11 @@
    - 返回到Worker服务页面顶部，在设置中域和路由，用workers.dev值也就是中国wokers的域进行访问。
    - 使用您设置的`ADMIN_USERNAME`和`ADMIN_PASSWORD`进行登录。
    - 登录成功后，您可以添加您的API-KEY了。
+
+7. **创建新的 API Key**
+   - 创建新的API Key后可能不会马上显示在列表中，等几秒，或者刷新一下就好了。
+
+8. **界面展示**
+   ![image.png](https://tgpicture.6666689.xyz/file/1732016997908_image.png)
+   ![image.png](https://tgpicture.6666689.xyz/file/1732017092874_image.png)
+   ![image](https://github.com/user-attachments/assets/3cabd859-6d43-4ed9-ba12-41b0c13d15b4)
